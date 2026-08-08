@@ -2,6 +2,8 @@ import React from "react";
 import HeroSection from "./sections/HeroSection";
 import FeaturedSection from "./sections/FeaturedSection";
 import DiscoverSection from "./sections/DiscoverSection";
+import CallToActionSection from "./sections/CallToActionSection";
+import FooterSection from "./sections/FooterSection";
 
 const Landing = () => {
   return (
@@ -9,6 +11,8 @@ const Landing = () => {
       <HeroSection />
       <FeaturedSection />
       <DiscoverSection />
+      <CallToActionSection />
+      <FooterSection />
     </div>
   );
 };
