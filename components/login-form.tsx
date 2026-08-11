@@ -46,8 +46,8 @@ export function LoginForm({
       return;
     }
 
-    router.push("/dashboard");
     router.refresh();
+    router.push("/dashboard");
   };
 
   return (
@@ -90,9 +90,7 @@ export function LoginForm({
                 render={({ field, fieldState }) => (
                   <Field data-invalid={fieldState.invalid}>
                     <div className="flex items-center">
-                      <FieldLabel htmlFor="login-password">
-                        Password
-                      </FieldLabel>
+                      <FieldLabel htmlFor="login-password">Password</FieldLabel>
                       <a
                         href="#"
                         className="ml-auto text-sm underline-offset-2 hover:underline"
@@ -144,8 +142,8 @@ export function LoginForm({
         </CardContent>
       </Card>
       <FieldDescription className="px-6 text-center">
-        By clicking continue, you agree to our{" "}
-        <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+        By clicking continue, you agree to our <a href="#">Terms of Service</a>{" "}
+        and <a href="#">Privacy Policy</a>.
       </FieldDescription>
     </div>
   );
